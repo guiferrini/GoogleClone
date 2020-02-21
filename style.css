@@ -4,6 +4,17 @@
     /* box-sizing: ; borda da minha web */
 }
 
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    background-color: green;
+}
+
+body > *{
+    background-color: blue;
+}
     button {
         all: unset;
         background-color: blue;
@@ -45,4 +56,16 @@ nav > div:first-child {
 
 nav > div:last-child{
     min-width: 300px;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+
+}
+
+section > input {
+    margin-top: 20px;
 }
